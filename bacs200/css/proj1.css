@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+:root {
+  --bg-clr-main-hue: 210;
+  --bg-clr-main-saturation: 50%;
+  --bg-clr-main-lightness: 40%;
+}
+
+body {
+  --bg--clr-main-hsl: hsl(
+    var(--bg-clr-main-hue),
+    var(--bg-clr-main-saturation),
+    var(--bg-clr-main-lightness)
+  );
+  
+  background-color: var(--bg--clr-main-hsl);
+  color: whitesmoke;
+}

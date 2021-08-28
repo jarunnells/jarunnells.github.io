@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url("vars1.css");
 /**
  * ============================================================================
  *
@@ -12,19 +12,19 @@
  * ============================================================================
  */
 
-:root {
-  --bg-clr-main-hue: 210;
-  --bg-clr-main-saturation: 50%;
-  --bg-clr-main-lightness: 40%;
-}
-
 body {
-  --bg--clr-main-hsl: hsl(
-    var(--bg-clr-main-hue),
-    var(--bg-clr-main-saturation),
-    var(--bg-clr-main-lightness)
-  );
-  
   background-color: var(--bg--clr-main-hsl);
   color: whitesmoke;
+}
+
+h1 {
+  font-variant: small-caps;
+}
+
+.required-text {
+  font: small-caps bold var(--font-size) var(--font-family);
+}
+
+footer {
+  font: italic small-caps var(--font-size) var(--font-family);
 }
